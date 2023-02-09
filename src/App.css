@@ -24,15 +24,84 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.body{
+  height: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.splash {
+  height: 75%;
+  background-color: #FAE4CF;
+  display: flex;
+  justify-content: space-between;
+}
+
+.barista-img{
+  width: 35%;
+  padding-right: 10px;
+}
+
+.button-wrapper {
+  margin: 50px;
+  cursor: pointer
+}
+
+.footer {
+  background-color: #F9F8F7;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-content {
+  padding: 20px;
+  color: lightgray;
+  font-weight: 700;
+  padding-top: 40px
+}
+
+.contact-us {
+  width: 33%;
+  background: #FAE4CF;
+  padding: 50px 100px;
+  border: 2px solid rgba(0,0,0,1);
+  box-shadow: 15px 15px 1px #ffa580, 15px 15px 1px 2px rgba(0,0,0,1)
+}
+
+.input {
+  display: block;
+  width: 100%;
+  font-size: 14pt;
+  line-height: 28pt;
+  margin-bottom: 28pt;
+  border: none;
+  border-bottom: 5px solid rgba(0,0,0,1);
+  background: #FAE4CF;
+  min-width: 250px;
+  padding-left: 5px;
+  outline: none;
+  color: rgba(0,0,0,1)
+}
+
+.input:focus{
+  border-bottom: 5px solid #ffa580
+}
+
+.button{
+  display: block; 
+  margin: 0 auto;
+  line-height: 28pt;
+  padding: 0 20px;
+  background: #ffa580;
+  letter-spacing: 2px;
+  transition: .2s all ease-in-out;
+  outline: none;
+  border: 1px solid rgba(0,0,0,1);
+  box-shadow: 3px 3px 1px 1px #95a4ff, 3px 3px 1px 2px rgba(0,0,0,1);
+
+}
+
+.button:hover{
+  background: rgba(0,0,0,1);
+  color: white;
+  border: 1px solid rgba(0,0,0,1)
 }
