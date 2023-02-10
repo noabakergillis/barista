@@ -7,12 +7,12 @@ interface Props {
 
 
 
-class CustomButton extends React.Component<Props> {
+class CustomButtonLarge extends React.Component<Props> {
 
 
   render(): React.ReactNode {
     return <div>
-      <div className="button">
+      <div className="button-large">
         {this.props.text}
       </div>
       
@@ -20,4 +20,4 @@ class CustomButton extends React.Component<Props> {
   }
 }
 
-export default CustomButton;
+export default CustomButtonLarge;

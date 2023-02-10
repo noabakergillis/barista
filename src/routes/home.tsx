@@ -1,7 +1,7 @@
 import '../App.css';
-import barista_icon from '../barista_icon.svg' 
+import blue_student from '../blue_student.png' 
 import * as React from 'react'
-import CustomButton from '../components/button';
+import CustomButtonLarge from '../components/customButtonLarge';
 import { Link } from 'react-router-dom';
 import dark_logo_transparent_background from '../dark_logo_transparent_background.png'
 
@@ -16,15 +16,17 @@ class Home extends React.Component{
             <div></div>
             <div style={{display: "flex", flexDirection: "column", justifyContent: "center"}}>
                 <div className='button-wrapper'>
-                    <CustomButton text={"Barista for business"}/>
+                  <Link to={"/baristaForBusiness"}>
+                    <CustomButtonLarge text={"Barista for employers"}/>
+                  </Link>  
                     </div>
                     <div className='button-wrapper'>
-                        <Link to={"/studentSignup"}><CustomButton text={"Barista for students"}/></Link>
+                        <Link to={"/studentSignup"}><CustomButtonLarge text={"Barista for students"}/></Link>
                     </div>
                 </div>
     
           <div className="barista-img">
-            <img src={barista_icon}  alt="barista"/>
+            <img style={{width: "100%"}} src={blue_student}  alt="barista"/>
           </div>
         </div>
         <div className='inner-footer'>
